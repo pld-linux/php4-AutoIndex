@@ -47,13 +47,13 @@ $hidden_files = array(
 	".*",
 );
 $show_only_these_files = array();
-$force_download = true;
+$force_download = false;
 $bandwidth_limit = 0;
 $anti_leech = false;
 $enable_searching = true;
 $show_dir_size = true;
-$folder_expansion = true;
-$show_folder_count = true;
+$folder_expansion = false;
+$show_folder_count = false;
 $days_new = 0;
 $md5_show = 0;
 $thumbnail_height = 0;
