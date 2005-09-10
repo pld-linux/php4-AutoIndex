@@ -1,0 +1,33 @@
+--- ./config.php~	2005-08-10 22:17:46.000000000 +0300
++++ ./config.php	2005-09-10 14:49:01.605195393 +0300
+@@ -227,8 +227,8 @@
+ 
+ <table width="650" cellpadding="8"><tr class="paragraph"><td class="default_td">
+ base_dir = <input type="text" name="base_dir" value="./" />
+-<br />icon_path = <input type="text" name="icon_path" value="index_icons/winxp" />
+-<br />stylesheet = <input type="text" name="stylesheet" value="stylesheet.css" />
++<br />icon_path = <input type="text" name="icon_path" value="/AutoIndex/index_icons/winxp" />
++<br />stylesheet = <input type="text" name="stylesheet" value="/AutoIndex/stylesheet.css" />
+ </td></tr></table>
+ 
+ <hr class="default_hr" />
+@@ -309,7 +309,7 @@
+ 
+ <p />
+ <table width="650" cellpadding="8"><tr class="paragraph"><td class="default_td">
+-path_to_language_files = <input type="text" name="path_to_language_files" value="./languages/" />
++path_to_language_files = <input type="text" name="path_to_language_files" value="/usr/share/AutoIndex/languages/" />
+ <br />lang = <select name="lang">
+ <?php
+ 
+--- ./config.php~	2005-09-10 14:50:18.000000000 +0300
++++ ./config.php	2005-09-10 14:57:54.063713100 +0300
+@@ -259,7 +259,7 @@
+ <table width="650" cellpadding="8"><tr class="paragraph"><td class="default_td">
+ sub_folder_access = <select name="sub_folder_access"><option selected="selected" value="true">true</option><option value="false">false</option></select>
+ <br />index = <input type="text" name="index" />
+-<br />hidden_files = <input type="text" name="hidden_files" size="80" value="$log_file, $links_file, $description_file, $banned_list, $stylesheet, $download_count, index_icons, languages, *.php, .ht*" />
++<br />hidden_files = <input type="text" name="hidden_files" size="80" value="$log_file, $links_file, $description_file, $banned_list, $stylesheet, $download_count, index_icons, languages, *.php, .ht*, *~, .*" />
+ <br /><span class="small">(Separate multiple items with commas.)</span>
+ <br />show_only_these_files = <input type="text" size="30" name="show_only_these_files" /> <span class="small">(Separate multiple items with commas.)</span>
+ </td></tr></table>
