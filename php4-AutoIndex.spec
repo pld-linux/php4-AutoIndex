@@ -15,6 +15,7 @@ BuildRequires:	rpmbuild(macros) >= 1.221
 Requires:	apache >= 1.3.33-2
 Requires:	php4 > 3:4.0.0
 Obsoletes:	AutoIndex
+Obsoletes:	php-AutoIndex
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -87,5 +88,5 @@ fi
 %doc *.html
 %attr(751,root,http) %dir %{_sysconfdir}
 %attr(640,root,root) %config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/apache.conf
-%attr(644,root,http) %config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/*.php
+%attr(640,root,http) %config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/*.php
 %{_appdir}
