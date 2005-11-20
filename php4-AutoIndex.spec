@@ -12,15 +12,16 @@ Source1:	%{name}.php
 Patch0:		%{name}-config.patch
 URL:		http://autoindex.sourceforge.net/
 BuildRequires:	rpmbuild(macros) >= 1.221
-Requires:	apache >= 1.3.33-2
+Requires:	webserver = apache
 Requires:	php4 > 3:4.0.0
 Obsoletes:	AutoIndex
 Obsoletes:	php-AutoIndex
+Conflicts:	apache1 < 1.3.33-2
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define	_sysconfdir	/etc/%{_appname}
-%define	_appdir		%{_datadir}/%{_appname}
+%define		_sysconfdir	/etc/%{_appname}
+%define		_appdir		%{_datadir}/%{_appname}
 
 %description
 A Website Directory Indexer and File Manager (AutoIndex PHP Script).
