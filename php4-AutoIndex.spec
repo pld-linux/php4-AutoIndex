@@ -3,7 +3,7 @@ Summary:	A Website Directory Indexer and File Manager (AutoIndex PHP Script)
 Summary(pl):	Webowy indeks zawarto¶ci katagów i zarz±dca plików (AutoIndex PHP Script)
 Name:		php4-AutoIndex
 Version:	1.5.4
-Release:	0.9
+Release:	0.10
 License:	GPL
 Group:		Applications/Networking
 Source0:	http://dl.sourceforge.net/autoindex/%{_appname}-%{version}.tar.gz
@@ -12,8 +12,9 @@ Source1:	%{name}.php
 Patch0:		%{name}-config.patch
 URL:		http://autoindex.sourceforge.net/
 BuildRequires:	rpmbuild(macros) >= 1.221
+Requires:	php-common >= 3:4.0.0
 Requires:	webserver = apache
-Requires:	php4 > 3:4.0.0
+Requires:	webserver(php)
 Obsoletes:	AutoIndex
 Obsoletes:	php-AutoIndex
 Conflicts:	apache1 < 1.3.33-2
