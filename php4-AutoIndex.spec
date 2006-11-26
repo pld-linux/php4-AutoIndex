@@ -12,9 +12,8 @@ Source1:	%{name}.php
 Patch0:		%{name}-config.patch
 URL:		http://autoindex.sourceforge.net/
 BuildRequires:	rpmbuild(macros) >= 1.221
-Requires:	php-common >= 3:4.0.0
 Requires:	webserver = apache
-Requires:	webserver(php)
+Requires:	webserver(php) >= 4.0.0
 Obsoletes:	AutoIndex
 Obsoletes:	php-AutoIndex
 Conflicts:	apache1 < 1.3.33-2
