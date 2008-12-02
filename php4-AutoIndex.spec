@@ -11,6 +11,7 @@ Source0:	http://dl.sourceforge.net/autoindex/%{_appname}-%{version}.tar.gz
 Source1:	%{name}.php
 Patch0:		%{name}-config.patch
 URL:		http://autoindex.sourceforge.net/
+BuildRequires:	migrate-to-webapps
 BuildRequires:	rpmbuild(macros) >= 1.221
 Requires:	webserver = apache
 Requires:	webserver(php) >= 4.0.0
