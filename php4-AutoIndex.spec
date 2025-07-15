@@ -33,7 +33,7 @@ Script).
 
 %prep
 %setup -q -n %{_appname}
-%patch0 -p1
+%patch -P0 -p1
 rm -f license.html # GPL
 
 %install
